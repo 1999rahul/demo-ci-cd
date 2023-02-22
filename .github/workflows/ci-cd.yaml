@@ -27,7 +27,7 @@ jobs:
         run: dotnet build -c Release --no-restore
       
       - name: Publish app
-        run: dotnet publish ~/work/demo-ci-cd/demo-ci-cd/demo-ci-cd-api.csproj -c Release -o ./out
+        run: dotnet publish ~/work/demo-ci-cd/demo-ci-cd/demo-ci-cd-api/demo-ci-cd-api.csproj -c Release -o ./out
       
       - name: Deploy to Azure Web Apps
         uses: azure/webapps-deploy@v2
